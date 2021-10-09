@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslaterService } from 'src/app/services/translater.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  buttons: any;
+
+  constructor(private translaterService: TranslaterService) { }
 
   ngOnInit(): void {
+    this.buttons = this.translaterService.getTextContent().getButtonsName();
   }
 
 }
