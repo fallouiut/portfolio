@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+$main_color_strong: #EE8900;
+$main_color_semi: #FFECC5;
+$main_color_light: #FFFDF0;
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: $main_color_light;
+}
+
+.bg-main-strong {
+    background: $main_color_strong;
+}
+
+.bg-main-semi {
+    background: $main_color_semi;
+}
+
+.bg-main-light {
+    background: $main_color_light;
+}
+
+.font-main-strong {
+    color: $main_color_strong;
+}
+
+.font-main-semi {
+    color: $main_color_semi;
+}
+
+.font-main-light {
+    color: $main_color_light;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1px) and (max-width: 450px) {
+    body {
+        font-size: 70%;
+    }
+}

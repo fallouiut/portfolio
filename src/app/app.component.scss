@@ -1,0 +1,53 @@
+.container {
+    height: inherit;
+    width: 100%;
+}
+
+.content {
+    height: 500px;
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.fixed-zone {
+    // background: red;
+    position: fixed;
+    height: 120px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fz-bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.fz-bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+.fixed-zone .fz-asset {
+    width: 50px;
+}
+
+
+.fixed-zone .fz-asset .br{
+    height: 40px;
+}
+
+.fixed-zone  .fz-ic {
+    margin: 10px;
+    font-size: 35px;
+    color: black;
+}
+
+@media screen and (min-width: 1px) and (max-width: 600px) {
+    .content {
+        width: 100%;
+    }
+}
