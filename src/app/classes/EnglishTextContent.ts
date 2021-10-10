@@ -54,5 +54,9 @@ export class EnglishTextContent implements TextContent {
 
         ]
     }
+
+    getExperiencesContent() {
+        throw new Error("Method not implemented.");
+    }
     
 }

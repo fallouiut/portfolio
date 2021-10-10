@@ -51,7 +51,41 @@ export class FrenchTextContent implements TextContent {
                 name: "Baccalauréat STL - Lycée Victor Hugo"
             },
 
+        ]
+    }
 
+    getExperiencesContent() {
+        return [
+            {
+                expName:    "Stage - Développeur",
+                duration:   "Avr. 2021 - Sept. 2021",
+                compagny:   "Stanley Security France",
+                techs:      ".NET / Transact-SQL",
+                description: "Migration de doonnées d'une base à une autre. Développement de certaines requêtes de l'API de l'espace client",
+                rapportUrl: "",
+                imgUrl:     "assets/imgs/companies/logo_stanley.png",
+
+            },
+            {
+                expName:    "Stage - Développeur",
+                duration:   "Mai. 2020 - Sept. 2020",
+                compagny:   "Université Gustave Eiffel",
+                techs:      "C++ / QT / Qml",
+                description: "Développement du module 'Base de données' du logiciel Alizé 2.0",
+                rapportUrl: "",
+                imgUrl:     "assets/imgs/companies/uge.png",
+
+            },
+            {
+                expName:    "Stage - Développeur",
+                duration:   "Avr. 2018 - Juin. 2018",
+                compagny:   "Benjamin Bellantonio",
+                techs:      "Symfony / Socket.io / jQuery / RabbitMQ / Docker",
+                description: "Développement de certaines fonctionnalités du site 'Angel Protect System'",
+                rapportUrl: "",
+                imgUrl:     "assets/imgs/companies/aps.png",
+
+            }
         ]
     }
 

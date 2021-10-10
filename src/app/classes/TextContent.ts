@@ -8,4 +8,6 @@ export interface TextContent {
 
     getSchoolContent(): any;
 
+    getExperiencesContent(): any;
+
 }

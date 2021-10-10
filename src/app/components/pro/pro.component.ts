@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslaterService } from 'src/app/services/translater.service';
 
 @Component({
   selector: 'app-pro',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProComponent implements OnInit {
 
-  constructor() { }
+  experiences: any;
+
+  constructor(private translaterService: TranslaterService) { }
 
   ngOnInit(): void {
+    this.experiences = this.translaterService.getTextContent().getExperiencesContent();
   }
 
 }

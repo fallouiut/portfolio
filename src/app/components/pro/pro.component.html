@@ -1,1 +1,36 @@
-<p>pro works!</p>
+<div *ngFor="let exp of experiences" class="pro-card">
+
+    <div class="title bg-main-strong">
+        <h3>{{ exp.expName }}</h3>
+    </div>
+
+    <div class="content">
+
+        <div class="left">
+            <img [src]="exp.imgUrl" />
+            <h5>{{ exp.duration }}</h5>
+
+            <div *ngIf="exp.rapportUrl != ''" class="rapport bg-main-semi ">
+                <i class="fa fa-paperclip fa-2x"></i>
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div class="work-info bg-main-semi">
+                <h3>{{ exp.compagny }}</h3>
+            </div>
+
+            <div class="work-info bg-main-semi">
+                <h3>{{ exp.techs }}</h3>
+            </div>
+
+            <div class="work-info bg-main-semi">
+                <p>{{ exp.description }}</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

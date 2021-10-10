@@ -1,0 +1,124 @@
+$pro-card-radius: 20px;
+$work-info-radius: 10px;
+
+.pro-card {
+    height: inherit;
+    width: 50%;
+    background:white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+
+    border-bottom-left-radius: $pro-card-radius;
+    border-bottom-right-radius: $pro-card-radius;
+
+}
+
+.title {
+    height: inherit;
+    width: 100%;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top-left-radius: $pro-card-radius;
+    border-top-right-radius: $pro-card-radius;
+}
+
+.content {
+    height: inherit;
+    width: 100%;
+    // background-color: lawngreen;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.content .left {
+    // background-color: red;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .left img {
+    height: 70px;
+    margin-top: 20px;
+}
+
+.content .left .rapport {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.content .right {
+    // background-color:lavenderblush;
+    width: 70%;
+    border-bottom-right-radius: $pro-card-radius;
+}
+
+.content .right .work-info {
+    height: inherit;
+    width: 95%;
+    margin: auto;
+    border-radius: $work-info-radius;
+}
+
+.work-info h3, p {
+    padding: 10px;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 1px) and (max-width: 450px) {
+    body {
+        font-size: 50%;
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 1400px) {
+    .pro-card  {
+        width: 90%;
+        font-size: 60%;
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 880px) {
+    .pro-card  {
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content .left  {
+        width: 100%;
+    }
+
+    .content .right {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 1px) and (max-width: 880px) {
+    .pro-card  {
+        font-size: 70%;
+    }
+}
