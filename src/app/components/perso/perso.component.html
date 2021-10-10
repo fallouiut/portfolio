@@ -1,1 +1,9 @@
-<p>perso works!</p>
+<div class="perso-card bg-main-light">
+    
+    <div *ngFor="for let project of persoProjets" class="card-one bg-main-semi">
+        <a target="_blank" [href]="project.url"><img [src]="project.img" /></a>
+        <h3>{{ project.duration }}</h3>
+        <p>{{ project.descr }}</p>
+    </div>
+
+</div>

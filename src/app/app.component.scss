@@ -24,11 +24,17 @@
 .fz-bottom-left {
     bottom: 0;
     left: 0;
+
+    animation: showLanguages 2s;
+    animation-fill-mode: forwards;
 }
 
 .fz-bottom-right {
     bottom: 0;
     right: 0;
+
+    animation: showLinks 2s;
+    animation-fill-mode: forwards;
 }
 
 .fixed-zone .fz-asset {
@@ -45,6 +51,29 @@
     font-size: 35px;
     color: black;
 }
+
+
+@keyframes showLanguages {
+    0% {
+        margin-left: -100%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+}
+
+
+@keyframes showLinks {
+    0% {
+        margin-right: -100%;
+    }
+
+    100% {
+        margin-right: 0%;
+    }
+}
+
 
 @media screen and (min-width: 1px) and (max-width: 600px) {
     .content {

@@ -8,8 +8,8 @@ import { TranslaterService } from './services/translater.service';
 })
 export class AppComponent {
 
-  constructor(private translaterService: TranslaterService) {
 
+  constructor(private translaterService: TranslaterService) {
   }
 
   ngOnInit(): void {

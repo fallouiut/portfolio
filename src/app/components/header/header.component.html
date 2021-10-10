@@ -25,20 +25,25 @@
 
     <div class="menu">
         <div class="menu-button bg-main-strong">
-            <a href="/"><p>{{ buttons.fallou }}</p></a>
+            <a (click)="moveTo('/')"><p>{{ buttons.fallou }}</p></a>
         </div>
         <div class="menu-button bg-main-strong">
-            <a href="/school"><p>{{ buttons.school }}</p></a>
+            <a (click)="moveTo('/school')"><p>{{ buttons.school }}</p></a>
         </div>
         <div class="menu-button bg-main-strong">
-            <a href="/professional"><p>{{ buttons.pro }}</p></a>
+            <a (click)="moveTo('/professional')"><p>{{ buttons.pro }}</p></a>
         </div>
         <div class="menu-button bg-main-strong">
-            <a href="/personal"><p>{{ buttons.perso }}</p></a>
+            <a (click)="moveTo('/personal')"><p>{{ buttons.perso }}</p></a>
         </div>
         <div class="menu-button bg-main-strong">
-            <a href="/tech-stack"><p>{{ buttons.stack }}</p></a>
+            <a (click)="moveTo('/tech-stack')"><p>{{ buttons.stack }}</p></a>
         </div>
+    </div>
+
+    <div class="info bg-main-strong">
+        <i class="fa fa-info-circle fa-2x"></i>
+        <p>{{ info }}</p>
     </div>
 
 </div>

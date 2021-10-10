@@ -3,6 +3,10 @@ import { TextContent } from "./TextContent";
 export class FrenchTextContent implements TextContent {
 
     readonly lang: string = 'fr';
+
+    getInfos() {
+        return "Crée le 10/10/2021";
+    }
     
     getButtonsName() {
         return {
@@ -46,7 +50,7 @@ export class FrenchTextContent implements TextContent {
 
 
             {
-                img: "assets/imgs/school/iut_logo.png",
+                img: "assets/imgs/school/lvh.png",
                 years: "2012 - 2015",
                 name: "Baccalauréat STL - Lycée Victor Hugo"
             },
@@ -61,7 +65,7 @@ export class FrenchTextContent implements TextContent {
                 duration:   "Avr. 2021 - Sept. 2021",
                 compagny:   "Stanley Security France",
                 techs:      ".NET / Transact-SQL",
-                description: "Migration de doonnées d'une base à une autre. Développement de certaines requêtes de l'API de l'espace client",
+                description: "Migration de données d'une base à une autre. Développement de certaines requêtes de l'API de l'espace client",
                 rapportUrl: "",
                 imgUrl:     "assets/imgs/companies/logo_stanley.png",
 
@@ -81,7 +85,7 @@ export class FrenchTextContent implements TextContent {
                 duration:   "Avr. 2018 - Juin. 2018",
                 compagny:   "Benjamin Bellantonio",
                 techs:      "Symfony / Socket.io / jQuery / RabbitMQ / Docker",
-                description: "Développement de certaines fonctionnalités du site 'Angel Protect System'",
+                description: "Développement de certaines fonctionnalités (formulaires, chat et notifications en temps réel, système de news météo) du site 'Angel Protect System'",
                 rapportUrl: "",
                 imgUrl:     "assets/imgs/companies/aps.png",
 
@@ -89,5 +93,33 @@ export class FrenchTextContent implements TextContent {
         ]
     }
 
+    getPersonalContent() {
+        return [
+            
+            {
+                img     : "assets/imgs/pp.png",
+                duration: "2021",
+                descr   : "Portfolio",
+                url     : ""
+            },
+
+            {
+                img     : "assets/imgs/persos/assak_logo.png",
+                duration: "2016 - en cours",
+                descr   : "Partage de cours, aide scolaire",
+                url     : "https://www.assak.fr"
+            },
+
+            {
+                img     : "assets/imgs/persos/kyn.png",
+                duration: "Déc 2019 - Fev 2020",
+                descr   : "Finition + ajout de contenu",
+                url     : "https://kyntradingco.com/"
+            },
+
+
+
+        ];
+    }
     
 }

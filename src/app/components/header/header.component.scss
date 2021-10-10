@@ -51,6 +51,7 @@
     flex-direction: row;
     justify-content: center;
     overflow: auto;
+    margin-bottom: 20px;
 }
 
 .menu-button {
@@ -61,12 +62,76 @@
     align-items: center;
     margin: 10px;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .menu-button p {
     font-size: 100%;
     color: white;
     font-weight: bold;
+}
+
+.info {
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: white;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    animation: showInfoBar 2s alternate;
+    animation-fill-mode: forwards;   
+}
+
+.info p {
+    visibility: hidden;
+    animation: showInfoText 1s;
+    animation-delay: 2.5s;
+    margin-left: 10px;
+    font-weight: bold;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showInfoText {
+    0% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes showInfoBar {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 250px;
+    }
+}
+
+
+@media screen and (min-width: 1px) and (max-width: 600px) {
+
+    .menu-button p {
+        font-size: 80%;
+        color: white;
+        font-weight: bold;
+    }
+
+    .info {
+        display: none;
+    }
+    
 }
 
 @media screen and (min-width: 1px) and (max-width: 450px) {

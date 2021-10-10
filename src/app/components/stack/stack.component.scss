@@ -1,0 +1,69 @@
+.stack-card {
+    height: inherit;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    // grid-auto-columns: max-content;
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.one-skill {
+    height: 150px;
+    width: 150px;
+    background: white;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one-skill img {
+    height: 70px;
+}
+
+.one-skill h3 {
+    margin: 10px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1px) and (max-width: 1040px) {
+
+    .stack-card {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+@media screen and (min-width: 1px) and (max-width: 770px) {
+
+    .stack-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .one-skill img {
+        height: 50px;
+    }
+
+    
+}
+
+@media screen and (min-width: 1px) and (max-width: 450px) {
+
+    .one-skill {
+        height: 100px;
+        width: 100px;
+        background: white;
+        border-radius: 20px;
+        margin: 20px;
+    }
+        
+    .one-skill img {
+        height: 30px;
+    }
+
+    
+}

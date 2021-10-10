@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslaterService } from 'src/app/services/translater.service';
 
 @Component({
   selector: 'app-perso',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersoComponent implements OnInit {
 
-  constructor() { }
+  persoProjets: any;
+
+  constructor(private translaterService: TranslaterService) { }
 
   ngOnInit(): void {
+    this.persoProjets = this.translaterService.getTextContent().getPersonalContent();
   }
+
 
 }
