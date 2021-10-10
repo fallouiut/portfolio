@@ -5,7 +5,7 @@ export class EnglishTextContent implements TextContent {
     readonly lang: string = 'en';
     
     getInfos() {
-        return "Créated at 2021/10/10";
+        return "Created at 2021/10/10";
     }
 
     getButtonsName() {
