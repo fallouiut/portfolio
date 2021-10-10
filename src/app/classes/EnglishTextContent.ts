@@ -64,9 +64,10 @@ export class EnglishTextContent implements TextContent {
             {
                 expName:    "Internship - Web Development",
                 duration:   "2021, Apr. - 2021, Sept",
-                compagny:   "Stanley Security France",
+                company:   "Stanley Security France",
                 techs:      ".NET / Transact-SQL",
                 description: "Database migration. API end-point development",
+                place: "Remote work",
                 rapportUrl: "",
                 imgUrl:     "assets/imgs/companies/logo_stanley.png",
 
@@ -74,21 +75,25 @@ export class EnglishTextContent implements TextContent {
             {
                 expName:    "Internship - Desktop Development",
                 duration:   "2020, May - 2020, Sept.",
-                compagny:   "Université Gustave Eiffel",
+                company:   "Université Gustave Eiffel",
                 techs:      "C++ / QT / Qml",
                 description: "Developing the Database module for Alizé 2.0 software",
                 rapportUrl: "assets/rapports/rapport_2020.pdf",
                 imgUrl:     "assets/imgs/companies/uge.png",
+                place: "Remote work + Nantes",
+
 
             },
             {
                 expName:    "Internship - Web Development",
                 duration:   "2018, Apr. - 2018, June",
-                compagny:   "Benjamin Bellantonio",
+                company:   "Benjamin Bellantonio",
                 techs:      "Symfony / Socket.io / jQuery / RabbitMQ / Docker",
                 description: "Déveloping some features (forms, realtime notifications & chat, weather news system) for Angel Protect System's website",
                 rapportUrl: "assets/rapports/rapport_2018.pdf",
                 imgUrl:     "assets/imgs/companies/aps.png",
+                place: "Gardanne",
+
 
             }
         ]
