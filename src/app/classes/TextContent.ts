@@ -6,4 +6,6 @@ export interface TextContent {
 
     getPresentationContent(): any;
 
+    getSchoolContent(): any;
+
 }

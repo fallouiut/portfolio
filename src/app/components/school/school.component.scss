@@ -1,0 +1,46 @@
+.school-card {
+    height: inherit;
+    width: 50%;
+    background:white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.school-card img {
+    width: 200px;
+}
+
+.school-card h2, h3 {
+    margin: 10px;
+}
+
+@media screen and (min-width: 1px) and (max-width: 450px) {
+    body {
+        font-size: 50%;
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 1200px) {
+    .school-card  {
+        width: 70%;
+        font-size: 70%;
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 880px) {
+    .school-card  {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 1px) and (max-width: 880px) {
+    .school-card  {
+        font-size: 70%;
+    }
+}

@@ -5,12 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
+import { SchoolComponent } from './components/school/school.component';
+import { ProComponent } from './components/pro/pro.component';
+import { PersoComponent } from './components/perso/perso.component';
+import { StackComponent } from './components/stack/stack.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    PresentationComponent
+    PresentationComponent,
+    SchoolComponent,
+    ProComponent,
+    PersoComponent,
+    StackComponent
   ],
   imports: [
     BrowserModule,
