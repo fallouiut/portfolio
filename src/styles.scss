@@ -5,6 +5,11 @@ $main_color_strong: #EE8900;
 $main_color_semi: #FFECC5;
 $main_color_light: #FFFDF0;
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 body {
     padding: 0;
     margin: 0;

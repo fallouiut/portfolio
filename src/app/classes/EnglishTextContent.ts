@@ -77,7 +77,7 @@ export class EnglishTextContent implements TextContent {
                 compagny:   "Université Gustave Eiffel",
                 techs:      "C++ / QT / Qml",
                 description: "Developing the Database module for Alizé 2.0 software",
-                rapportUrl: "",
+                rapportUrl: "assets/rapports/rapport_2020.pdf",
                 imgUrl:     "assets/imgs/companies/uge.png",
 
             },
@@ -86,8 +86,8 @@ export class EnglishTextContent implements TextContent {
                 duration:   "2018, Apr. - 2018, June",
                 compagny:   "Benjamin Bellantonio",
                 techs:      "Symfony / Socket.io / jQuery / RabbitMQ / Docker",
-                description: "Déveloping some features (forms, realtime notifications & chat, weather news system) for Angel Protect System's website'",
-                rapportUrl: "",
+                description: "Déveloping some features (forms, realtime notifications & chat, weather news system) for Angel Protect System's website",
+                rapportUrl: "assets/rapports/rapport_2018.pdf",
                 imgUrl:     "assets/imgs/companies/aps.png",
 
             }
@@ -105,19 +105,18 @@ export class EnglishTextContent implements TextContent {
             },
 
             {
-                img     : "assets/imgs/persos/assak_logo.png",
-                duration: "2016 - in progress",
-                descr   : "School courses shares, School assistance",
-                url     : "https://www.assak.fr"
-            },
-
-            {
                 img     : "assets/imgs/persos/kyn.png",
                 duration: "2019, Dec - 2020, Feb",
                 descr   : "Finishing + content adding",
                 url     : "https://kyntradingco.com/"
             },
 
+            {
+                img     : "assets/imgs/persos/assak_logo.png",
+                duration: "2016 - in progress",
+                descr   : "School courses shares, School assistance",
+                url     : "https://www.assak.fr"
+            },
 
 
         ];

@@ -7,11 +7,12 @@
     <div class="content">
 
         <div class="left">
+            
             <img [src]="exp.imgUrl" />
             <h5>{{ exp.duration }}</h5>
 
             <div *ngIf="exp.rapportUrl != ''" class="rapport bg-main-semi ">
-                <i class="fa fa-paperclip fa-2x"></i>
+                <a target="_blank" [href]="exp.rapportUrl"><i class="fa fa-paperclip fa-2x"></i></a>
             </div>
 
         </div>
@@ -31,6 +32,10 @@
 
         </div>
 
+    </div>
+
+    <div class="space">
+        <p></p>
     </div>
 
 </div>

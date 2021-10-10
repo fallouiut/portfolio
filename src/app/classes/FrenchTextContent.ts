@@ -76,7 +76,8 @@ export class FrenchTextContent implements TextContent {
                 compagny:   "Université Gustave Eiffel",
                 techs:      "C++ / QT / Qml",
                 description: "Développement du module 'Base de données' du logiciel Alizé 2.0",
-                rapportUrl: "",
+                rapportUrl: "assets/rapports/rapport_2020.pdf",
+
                 imgUrl:     "assets/imgs/companies/uge.png",
 
             },
@@ -86,7 +87,7 @@ export class FrenchTextContent implements TextContent {
                 compagny:   "Benjamin Bellantonio",
                 techs:      "Symfony / Socket.io / jQuery / RabbitMQ / Docker",
                 description: "Développement de certaines fonctionnalités (formulaires, chat et notifications en temps réel, système de news météo) du site 'Angel Protect System'",
-                rapportUrl: "",
+                rapportUrl: "assets/rapports/rapport_2018.pdf",
                 imgUrl:     "assets/imgs/companies/aps.png",
 
             }
@@ -104,20 +105,18 @@ export class FrenchTextContent implements TextContent {
             },
 
             {
-                img     : "assets/imgs/persos/assak_logo.png",
-                duration: "2016 - en cours",
-                descr   : "Partage de cours, aide scolaire",
-                url     : "https://www.assak.fr"
-            },
-
-            {
                 img     : "assets/imgs/persos/kyn.png",
                 duration: "Déc 2019 - Fev 2020",
                 descr   : "Finition + ajout de contenu",
                 url     : "https://kyntradingco.com/"
             },
 
-
+            {
+                img     : "assets/imgs/persos/assak_logo.png",
+                duration: "2016 - en cours",
+                descr   : "Partage de cours, aide scolaire",
+                url     : "https://www.assak.fr"
+            },
 
         ];
     }
