@@ -136,17 +136,18 @@
 
 @media screen and (min-width: 1px) and (max-width: 450px) {
 
-    .menu {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: auto;
-    }
+    // .menu {
+    //     // flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    //     overflow: auto;
+    // }
 
     .menu-button {
-        width: 120px;
+        width: 60px;
         height: 35px;
         margin: 5px;
+        font-size: 50%;
     }
 
     .media-logo {
